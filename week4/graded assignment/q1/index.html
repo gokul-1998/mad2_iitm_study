@@ -6,10 +6,13 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
 </head>
 <body>
-    <div id="app" v-bind:style="[style1]">
-          hello world
-        </div>
-      </body>
+    <div id="app">
+        <ol>
+          <li v-for="item in items">{{item}}</li>
+        </ol>
+        <button @click="addItem">Add Item</button>
+      </div>
+      
       <script src="app.js"></script>
       
 </body>

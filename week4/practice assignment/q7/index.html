@@ -6,11 +6,13 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
 </head>
 <body>
-    <div id="app" v-bind:style="[style1]">
-          hello world
-        </div>
-      </body>
-      <script src="app.js"></script>
-      
+    <!---need to be checked--->
+    <div id="app">
+        <ol>
+            <comp v-for="message in messages" : message="message"></comp>
+        </ol>
+    </div>
+    <script src="app.js"></script>
+
 </body>
 </html>
